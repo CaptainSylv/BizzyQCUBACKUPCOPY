@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px !important;
     padding-bottom: 20px;
 }
 
@@ -9,14 +9,10 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
@@ -33,22 +29,38 @@ textarea {
 /*HOMEPAGE*/
 
 /*FOR CUSTOMIZING NAVBAR LOOK*/
+.navbar.navbar-inverse.navbar-fixed-top,
+.navbar.navbar-inverse.navbar-fixed-top.custom-navbar,
+.navbar-inverse,
+.navbar {
+    min-height: 90px !important;
+    height: 90px !important;
+}
+
 .custom-navbar {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     border-bottom: 2px solid transparent;
 }
 
+    .navbar-inverse .navbar-nav > li > a,
     .custom-navbar .navbar-nav > li > a {
-        color: #111fa2;
-        display: flex;
-        align-items: center;
-        font-size: 15px;
-        margin: 0 12px;
+        color: #111fa2 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 22px !important;
+        font-weight: 500 !important;
+        margin: 0 16px !important;
+        line-height: 90px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        height: 90px !important;
         transition: color 0.3s ease, transform 0.3s ease;
     }
 
+        .navbar-inverse .navbar-nav > li > a:hover,
         .custom-navbar .navbar-nav > li > a:hover {
-            color: #111fa2;
+            color: #111fa2 !important;
             transform: scale(1.1);
         }
 
@@ -56,14 +68,39 @@ textarea {
         background-color: #ffde42;
     }
 
+    .navbar-inverse .navbar-nav > li > a:focus,
     .custom-navbar .navbar-nav > li > a:focus {
-        color: #111fa2;
+        color: #111fa2 !important;
     }
 
 /*TOGGLE BUTTON*/
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #111fa2;
 }
+
+.navbar-inverse .navbar-toggle {
+    margin-top: 26px !important;
+    margin-bottom: 26px !important;
+}
+
+/*LOGO*/
+.navbar-inverse .navbar-brand,
+.navbar-brand {
+    height: 90px !important;
+    padding: 8px 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    line-height: normal !important;
+}
+
+    .navbar-inverse .navbar-brand img,
+    .navbar-brand img {
+        height: 68px !important;
+        width: auto !important;
+        display: block !important;
+        vertical-align: middle;
+    }
+
 
 /*HOMEPAGE*/
 /*bg for index/homepage only*/
@@ -125,20 +162,6 @@ body.home-bg {
         margin: 0;
     }
 
-/*LOGO*/
-.navbar-brand img {
-    width: auto;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
-    display: table-cell;
-    vertical-align: middle;
-}
-
 
 /* ============================================
    PRODUCT LIST PAGE
@@ -193,7 +216,6 @@ body.product-page {
         margin: 0 0 8px 0;
     }
 
-        /* "MARKETPLACE" word in yellow */
         .floating-header h2 .header-highlight {
             color: #ffde42;
         }
@@ -218,7 +240,6 @@ body.product-page {
     flex-shrink: 0;
 }
 
-/* Row that holds the search input + mobile filter icon */
 .search-row {
     display: flex;
     align-items: center;
@@ -231,7 +252,6 @@ body.product-page {
     flex: 1;
 }
 
-/* Filter icon button — hidden on desktop, shown on mobile */
 .filter-icon-btn {
     display: none;
     flex-shrink: 0;
@@ -356,7 +376,6 @@ body.product-page {
     display: block;
 }
 
-    /* hide broken img icon when src is empty */
     .product-img[src=""] {
         visibility: hidden;
     }
@@ -659,6 +678,10 @@ body.view-enterprise-bg {
 
 @media (max-width: 768px) {
 
+    body {
+        padding-top: 70px;
+    }
+
     /* General */
     .hero {
         height: 70vh;
@@ -694,10 +717,10 @@ body.view-enterprise-bg {
     }
 
         .custom-navbar .navbar-nav > li > a {
-            padding: 12px 20px;
+            padding: 14px 20px;
             margin: 0;
             border-bottom: 1px solid #f0f0f0;
-            font-size: 15px;
+            font-size: 16px;
             color: #111fa2;
             display: block;
             transform: none !important;
@@ -738,7 +761,6 @@ body.view-enterprise-bg {
         width: 100%;
     }
 
-    /* Show the filter icon on mobile */
     .filter-icon-btn {
         display: flex;
     }
@@ -750,7 +772,6 @@ body.view-enterprise-bg {
         padding: 10px 16px;
     }
 
-    /* Hide dropdowns by default on mobile; show when toggled */
     .filter-section {
         width: 100%;
         display: none !important;
