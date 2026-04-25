@@ -5,13 +5,13 @@
 }
 
 <div class="enterprise-page">
-    
+
     <!--ENTERPRISE BG CARD-->
     <div class="enterprise-floating-card">
 
         <!--ENTERPRISE NAME-->
         <div class="enterprise-header">
-            
+
             <div class="left-section">
                 <div class="enterprise-picture">
                     <img src="~/Content/Images/test-img-profile.jpg" />
@@ -114,6 +114,18 @@
 
 </div>
 
+<div id="ent-ad-modal" class="ad-modal">
+    <div class="ad-modal-content">
+        <span class="close-btn">&times;</span>
+
+        <!---replace the content/images/ad sample png, sample lang kasi yan-->
+        <img src="@Url.Content(ViewBag.AdImageUrl ?? "~/Content/Images/ad-sample.png")" alt="enterprise-ad" />
+    </div>
+</div>
 
 
-   
+<!--script src for advertisement pop up-->
+@section Scripts {
+    <script src="~/Scripts/Enterprise-Ad-Modal.js"></script>
+}
+
