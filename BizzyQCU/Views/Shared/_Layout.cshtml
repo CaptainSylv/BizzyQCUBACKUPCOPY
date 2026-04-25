@@ -26,15 +26,22 @@
     <div class="navbar navbar-inverse navbar-fixed-top custom-navbar">
         <div class="container">
             <div class="navbar-header">
+                <!--BACK BUTTON ONLY FOR MOBILE-->
+                <a href="javascript:history.back()" class="mobile-back-btn">
+                    <img src="~/Content/Images/back-btn.png" alt="back button image" class="back-icon" />
+                </a>
+
                 <a href="@Url.Action("Index", "Home")" class="navbar-brand">
                     <img src="~/Content/Images/BizzyQCU-navbar-logo.png" alt="BizzyQCU" />
                 </a>
+
                 <button type="button" class="navbar-toggle" title="more options">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
             </div>
+
             <div class="navbar-collapse collapse" id="main-nav">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Homepage", "Home")</li>
