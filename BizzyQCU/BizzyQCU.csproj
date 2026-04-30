@@ -160,6 +160,7 @@
     <Content Include="Content\Images\test-img1.jpg" />
     <Content Include="Content\Images\test-img2.jpg" />
     <Content Include="Content\MobileNavbar.css" />
+    <Content Include="Content\tracking.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -185,6 +186,7 @@
     <Content Include="Views\Home\RegisterStudent.cshtml" />
     <Content Include="Views\Home\RegisterEnterprise.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Manage.cshtml" />
     <None Include="Views\Home\tracking.cshtml" />
     <Content Include="Scripts\ProductPageLogic.js" />
     <Content Include="Web.config" />

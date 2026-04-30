@@ -24,6 +24,11 @@ namespace BizzyQCU.Controllers
             return View();
         }
 
+        public ActionResult Manage()
+        {
+            return View();
+        }
+
         public ActionResult History()
         {
             return View();
