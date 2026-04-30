@@ -36,7 +36,8 @@ function renderStats(stats) {
 function renderChart(period, chartData) {
     if (currentChart) currentChart.destroy();
     const canvas = document.getElementById('salesChart');
-    canvas.style.height = '250px';
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    canvas.style.height = isMobile ? '190px' : '250px';
     currentChart = new Chart(canvas, {
         type: 'line',
         data: {
@@ -52,7 +53,7 @@ function renderChart(period, chartData) {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: !isMobile,
             plugins: { legend: { display: false } },
             scales: { y: { beginAtZero: true, ticks: { callback: val => `₱${val}` } } }
         }
