@@ -87,12 +87,12 @@ function renderCart() {
             const row = document.createElement('tr');
             row.classList.add('product-row');
             row.innerHTML = `
-                <td style="text-align:center"><img src="${escapeHtml(item.ImageUrl)}" class="product-image" onerror="this.src='/Images/default.jpg'"></td>
-                <td class="product-name">${escapeHtml(item.ProductName)}</td>
-                <td>₱${item.UnitPrice.toFixed(2)}</td>
-                <td><input type="number" class="quantity-input" data-id="${item.Id}" value="${item.Quantity}" min="1" step="1"></td>
-                <td>₱${subtotal.toFixed(2)}</td>
-                <td class="text-center"><i class="fas fa-trash-alt action-icon" data-id="${item.Id}"></i></td>
+                <td data-label="Image" style="text-align:center"><img src="${escapeHtml(item.ImageUrl)}" class="product-image" onerror="this.src='/Images/default.jpg'"></td>
+                <td data-label="Product" class="product-name">${escapeHtml(item.ProductName)}</td>
+                <td data-label="Unit Price">₱${item.UnitPrice.toFixed(2)}</td>
+                <td data-label="Quantity"><input type="number" class="quantity-input" data-id="${item.Id}" value="${item.Quantity}" min="1" step="1"></td>
+                <td data-label="Subtotal">₱${subtotal.toFixed(2)}</td>
+                <td data-label="Action" class="text-center"><i class="fas fa-trash-alt action-icon" data-id="${item.Id}"></i></td>
             `;
             tbody.appendChild(row);
         });

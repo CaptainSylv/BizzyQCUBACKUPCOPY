@@ -8,9 +8,15 @@ namespace BizzyQCU.Controllers
 {
     public class CheckoutController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Checkout()
         {
             return View("CheckoutPage");
+        }
+
+        // Backward-compatible endpoint for existing links/bookmarks.
+        public ActionResult CheckoutPage()
+        {
+            return RedirectToAction("Checkout");
         }
     }
 }

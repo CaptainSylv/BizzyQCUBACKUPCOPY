@@ -8,7 +8,7 @@ namespace BizzyQCU.Controllers
 {
     public class EnterpriseDashboardController : Controller
     {
-        public ActionResult Index()
+        public ActionResult EnterpriseDashboard()
         {
             return View("EnterpriseDashboard");
         }
