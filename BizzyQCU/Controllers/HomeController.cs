@@ -20,3 +20,38 @@ namespace BizzyQCU.Controllers
         }
     }
 }
+
+        public ActionResult Tracking()
+        {
+            return View();
+        }
+
+        public ActionResult History()
+        {
+            return View();
+        }
+
+        public ActionResult Homepage()
+        {
+            ViewBag.Message = "Your Homepage.";
+
+            return View();
+        }
+
+      
+        public ActionResult ProductList()
+        {
+            ViewBag.Message = "Product List page.";
+
+            return View();
+        }
+
+        public ActionResult ViewEnterprise()
+        {
+            ViewBag.Message = "Your Enterprises.";
+            return View();
+        }
+
+
+    }
+}
