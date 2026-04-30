@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/Content/layout.css">
     <link rel="stylesheet" href="~/Content/home_about_product_ent.css">
     <link rel="stylesheet" href="~/Content/Chatroom.css">
+    <link rel="stylesheet" href="~/Content/MobileNavbar.css">
     @RenderSection("Styles", required: false)
 </head>
 <body>
@@ -30,13 +31,18 @@
             <a href="@Url.Action("ProductList", "ProductList")">PRODUCTS</a>
             <a href="@Url.Action("EnterpriseList", "EnterpriseList")">ENTERPRISES</a>
             <a href="@Url.Action("About", "Home")">ABOUT US</a>
+
+            <a href="#" class="account-mobile">
+                ACCOUNT
+            </a>
+
         </div>
 
         <div class="right-icons">
             <div class="cart-icon">
                 <a href="#"><img src="~/Images/cart-icon.png"></a>
             </div>
-            <div class="account-icon">
+            <div class="account-icon account-desktop">
                 <img src="~/Images/account-icon.png">
             </div>
 
@@ -61,9 +67,7 @@
     @RenderSection("Scripts", required: false)
 
 
-        
-
-
+        <!--FOR HAMBURGER TOGGLE-->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const btn = document.getElementById("hamburgerBtn");
