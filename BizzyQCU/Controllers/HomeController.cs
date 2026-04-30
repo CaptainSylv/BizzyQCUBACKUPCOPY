@@ -18,8 +18,6 @@ namespace BizzyQCU.Controllers
         {
             return View();
         }
-    }
-}
 
         public ActionResult Tracking()
         {
@@ -38,7 +36,7 @@ namespace BizzyQCU.Controllers
             return View();
         }
 
-      
+
         public ActionResult ProductList()
         {
             ViewBag.Message = "Product List page.";
@@ -51,7 +49,7 @@ namespace BizzyQCU.Controllers
             ViewBag.Message = "Your Enterprises.";
             return View();
         }
-
-
     }
 }
+
+   
