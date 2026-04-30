@@ -1,38 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace BizzyQCU.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Login()
         {
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-            return View();
-        }
-
-        public ActionResult Tracking()
+        public ActionResult RegisterStudent()
         {
             return View();
         }
 
-        public ActionResult History()
+        public ActionResult RegisterEnterprise()
         {
             return View();
         }
-    } // This one closes the HomeController class
-} // This one closes the Namespace
+    }
+}
