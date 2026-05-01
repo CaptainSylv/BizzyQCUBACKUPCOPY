@@ -16,23 +16,23 @@ namespace BizzyQCU.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-            return View();
-        }
 
-        public ActionResult Tracking()
-        {
             return View();
         }
-
-        public ActionResult History()
+        public ActionResult UserProfile()
         {
-            return View();
+            return RedirectToAction("UserProfile", "Profile");
         }
-    } // This one closes the HomeController class
-} // This one closes the Namespace
+        public new ActionResult Profile()
+        {
+            return RedirectToAction("EnterpriseProfile", "Profile");
+        }
+    }
+}
