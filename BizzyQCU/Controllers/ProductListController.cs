@@ -8,7 +8,7 @@ namespace BizzyQCU.Controllers
 {
     public class ProductListController : Controller
     {
-        
+
         public ActionResult ProductList()
         {
             return View();

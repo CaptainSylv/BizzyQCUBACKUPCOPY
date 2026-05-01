@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace BizzyQCU
@@ -16,7 +12,7 @@ namespace BizzyQCU
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "ManageOrders", action = "ManageOrders", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Tracking", id = UrlParameter.Optional }
             );
         }
     }

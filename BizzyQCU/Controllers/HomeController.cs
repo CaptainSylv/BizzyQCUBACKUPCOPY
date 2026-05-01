@@ -1,29 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace BizzyQCU.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Login()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult RegisterStudent()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult RegisterEnterprise()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult Tracking()
+        {
+            return View();
+        }
+
+        public ActionResult Manage()
+        {
+            return View();
+        }
+
+        public ActionResult History()
+        {
             return View();
         }
 
@@ -34,7 +41,7 @@ namespace BizzyQCU.Controllers
             return View();
         }
 
-      
+
         public ActionResult ProductList()
         {
             ViewBag.Message = "Product List page.";
@@ -48,6 +55,12 @@ namespace BizzyQCU.Controllers
             return View();
         }
 
-
+        public ActionResult About()
+        {
+            ViewBag.Message = "About page.";
+            return View();
+        }
     }
 }
+
+   
